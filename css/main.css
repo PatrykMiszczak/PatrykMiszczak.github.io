@@ -28,10 +28,6 @@ body {
 	left: 0;
 }
 
-#bg {
-	background-color: sandybrown;
-}
-
 #main {
 	position: fixed;
 	height: 100%;
@@ -61,4 +57,14 @@ nav {
 
 .avatar {
 	border-radius: 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root, a, a:hover, a:link, a:visited, a:active {
+		color: #bbb5a8
+	}
+
+	:root {
+		background-color: #35322f
+	}
 }
