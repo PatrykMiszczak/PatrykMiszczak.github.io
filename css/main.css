@@ -7,21 +7,15 @@ html, body {
 	padding: 0;
 }
 
+:root {
+	color: #444;
+}
+
 body {
 	font-family: "Raleway";
 }
 
-#main:before {
-	display: inline-block;
-	vertical-align: middle;
-	width: 1px;
-	height: 100%;
-	margin-right: 0;
-	content: '';
-}
-
 #wrapper {
-	position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -29,7 +23,6 @@ body {
 }
 
 #main {
-	position: fixed;
 	height: 100%;
 	width: 100%;
 	left: 0;
@@ -38,13 +31,33 @@ body {
 }
 
 h1 {
-	font-size: 3em
+	font-size: 3em;
+	font-weight: 300;
 }
 
 header {
+	box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+	height: 100%;
 	display: inline-block;
-	position: relative;
 	vertical-align: middle;
+}
+
+.impulse-response {
+	display: block;
+	position: relative;
+	margin-top: 30px;
+	width: 100%;
+	height: 200px;
+	background-image: url("./impulse.png");
+	background-size: calc(100% + 20px) 200px;
+	background-position-x: -20px;
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
+
+.content {
+	margin: 5em 2em;
+	margin-top: -65px;
 }
 
 a, a:hover, a:link, a:visited, a:active {
@@ -56,15 +69,53 @@ nav {
 }
 
 .avatar {
+	border: 4px rgb(221, 221, 221) solid;
 	border-radius: 50%;
+	width: 160px;
+	box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+}
+
+@media only screen and (min-width : 800px) {
+	#main:before {
+		display: inline-block;
+		vertical-align: middle;
+		width: 1px;
+		height: 100%;
+		margin-right: 0;
+		content: '';
+	}
+
+	#main {
+		position: fixed;
+	}
+
+	header {
+		border: solid #e9e9e9;
+		border-width: 0 1px;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
+	header {
+		background-color: black;
+		border-color: #252525;
+		box-shadow: 0 5px 15px rgba(49, 49, 49, 0.08);
+	}
+
+	.avatar {
+		border-color: black;
+	}
+
+	.impulse-response {
+		-webkit-filter: none;
+		filter: none;
+	}
+
 	:root, a, a:hover, a:link, a:visited, a:active {
-		color: #bbb5a8
+		color: #a8acbb;
 	}
 
 	:root {
-		background-color: #35322f
+		background-color: #020202
 	}
 }
