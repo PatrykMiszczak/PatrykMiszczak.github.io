@@ -69,7 +69,6 @@ nav {
 }
 
 .avatar {
-	border: 1px rgba(247 247 247 / 63%) solid;
 	border-radius: 50%;
 	width: 160px;
 	box-shadow: 0 3px 5px rgb(0 0 0 / 10%);
@@ -114,7 +113,7 @@ nav {
 
 @media (prefers-color-scheme: dark) {
 	.avatar {
-		border-color: rgb(52 52 52 / 63%);
+		border: 1px rgb(52 52 52 / 63%) solid;
 	}
 
 	.impulse-response {
