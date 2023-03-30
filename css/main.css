@@ -33,7 +33,6 @@ body {
 h1 {
 	font-size: 3em;
 	font-weight: 300;
-	filter: drop-shadow(0px 2px 3px rgba(0 0 0 / 20%));
 }
 
 header {
@@ -70,10 +69,10 @@ nav {
 }
 
 .avatar {
-	border: 1px rgb(247 247 247) solid;
+	border: 1px rgba(247 247 247 / 63%) solid;
 	border-radius: 50%;
 	width: 160px;
-	box-shadow: 0 5px 18px rgb(0 0 0 / 15%);
+	box-shadow: 0 3px 5px rgb(0 0 0 / 10%);
 }
 
 @media only screen and (min-width: 1000px) {
