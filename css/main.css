@@ -41,18 +41,19 @@ header {
 	vertical-align: middle;
 }
 
-.impulse-response {
+.header-image {
 	display: block;
 	position: relative;
 	margin-top: 30px;
 	width: 100%;
 	height: 200px;
 	z-index: -1;
-	background-image: url("./impulse.png");
-	background-size: calc(100% + 50px) 200px;
-	background-position-x: -50px;
-	-webkit-filter: invert(100%) opacity(0.04);
-	filter: invert(100%) opacity(0.04);
+	background-image: url("./header_image.jpeg");
+	background-size: 100% 200%;
+	background-position-y: -80px;
+	object-fit: cover;
+	-webkit-filter: opacity(0.9) grayscale(0.1);
+	filter: opacity(0.9) grayscale(0.1);
 }
 
 .content {
@@ -97,7 +98,7 @@ nav {
 	}
 
 	.content {
-		margin-top: -100px;
+		margin-top: -140px;
 	}
 }
 
@@ -109,6 +110,14 @@ nav {
 	h1 {
 		font-size: 2em;
 	}
+
+	.header-image {
+		background-size: 100% 150%;
+	}
+
+	.content {
+		margin-top: -100px;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -116,9 +125,9 @@ nav {
 		border: 1px rgb(52 52 52 / 63%) solid;
 	}
 
-	.impulse-response {
-		-webkit-filter: opacity(0.04);
-		filter: opacity(0.04);
+	.header-image {
+		-webkit-filter: opacity(0.9) grayscale(0.1);
+		filter: opacity(0.9) grayscale(0.1);
 	}
 
 	:root, a, a:hover, a:link, a:visited, a:active {
