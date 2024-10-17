@@ -49,8 +49,8 @@ header {
 	height: 200px;
 	z-index: -1;
 	background-image: url("./header_image.jpeg");
-	background-size: 100% 200%;
-	background-position-y: -80px;
+	background-size: 900px;
+	background-position-y: -120px;
 	object-fit: cover;
 	-webkit-filter: opacity(0.9) grayscale(0.1);
 	filter: opacity(0.9) grayscale(0.1);
@@ -109,10 +109,6 @@ nav {
 
 	h1 {
 		font-size: 2em;
-	}
-
-	.header-image {
-		background-size: 100% 150%;
 	}
 
 	.content {
