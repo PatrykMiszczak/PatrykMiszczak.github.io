@@ -12,29 +12,38 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+	<script async defer src="get-blog-post.js"></script>
 </head>
 
 <body>
 	<div id="wrapper">
 		<div id="bg"></div>
 		<div id="main">
-			<header>
-				<div class="header-image"></div>
-				<div class="content">
-					<img class="avatar" src="avatar.jpeg"></img>
-					<h1>Patryk Miszczak-Malesiński</h1>
-					<p>Software engineer <span aria-hidden="true">•</span> Sound design/DSP enthusiast <span aria-hidden="true">•</span> Guitarist</p>
-					<nav>
-						<a href="https://blog.miszczak.dev">Blog</a> <span aria-hidden="true">•</span>
-						<a href="https://miszczak.substack.com">Newsletter</a> <span aria-hidden="true">•</span>
-						<a rel="me" href="https://mastodon.social/@misp44">Mastodon</a> <span aria-hidden="true">•</span>
-						<a href="https://twitter.com/patryk_miszczak">Twitter</a> <span aria-hidden="true">•</span>
-						<a href="https://www.linkedin.com/in/patryk-miszczak-malesi%C5%84ski-825236108/">LinkedIn</a> <span aria-hidden="true">•</span>
-						<a href="https://gitlab.com/misp44">GitLab</a> <span aria-hidden="true">•</span>
-						<a href="https://github.com/PatrykMiszczak">GitHub</a>
-					</nav>
+			<div class="header-image"></div>
+			<div class="content">
+				<img class="avatar" src="avatar.jpeg"></img>
+				<h1>Patryk Miszczak-Malesiński</h1>
+				<p>Software engineer <span aria-hidden="true">•</span> Sound design/DSP enthusiast <span aria-hidden="true">•</span> Guitarist</p>
+				<nav>
+					<a href="https://blog.miszczak.dev">Blog</a> <span aria-hidden="true">•</span>
+					<a href="https://miszczak.substack.com">Newsletter</a> <span aria-hidden="true">•</span>
+					<a rel="me" href="https://mastodon.social/@misp44">Mastodon</a> <span aria-hidden="true">•</span>
+					<a href="https://twitter.com/patryk_miszczak">Twitter</a> <span aria-hidden="true">•</span>
+					<a href="https://www.linkedin.com/in/patryk-miszczak-malesi%C5%84ski-825236108/">LinkedIn</a> <span aria-hidden="true">•</span>
+					<a href="https://gitlab.com/misp44">GitLab</a> <span aria-hidden="true">•</span>
+					<a href="https://github.com/PatrykMiszczak">GitHub</a>
+				</nav>
+			</div>
+			<article id="latest-article" style="display: none;">
+				<header class="entry-header">
+					<span>Latest post on blog:</span>
+					<h2 id="latest-article-title"></h2>
+				</header>
+				<div>
+					<p id="latest-article-content"></p>
 				</div>
-			</header>
+				<a id="latest-article-link">go to post</a>
+			</article>
 		</div>
 	</div>
 </body>
